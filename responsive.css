@@ -1,0 +1,24 @@
+@media only screen and (max-width: 600px) {
+    .login-form {
+        width: 80%;
+        margin: 100px auto;
+        /* margin-top: 100px; */
+    }
+    .input {
+        min-width: 360px;
+    }
+
+    .condition-forgot {
+        width: 360px;
+        margin: 10px;
+    }
+
+    .condition {
+        transform: translateX(-15%);
+    }
+
+    .forgot {
+        /* transform: translateX(10%); */
+    }
+}
+    

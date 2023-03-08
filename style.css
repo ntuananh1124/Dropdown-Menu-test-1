@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Tajawal', sans-serif;
+    background-image: url(https://images.alphacoders.com/121/1210513.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.dropdown-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.148);
+    /* padding: 10px; */
+}
+
+.dropdown-item a{
+   text-decoration: none;
+   color: white; 
+   padding: 20px;
+   transition: 0.4s ease-out;
+}
+
+.dropdown-item {
+    /* display: inline-block; */
+    display: flex;
+    /* padding: 10px; */
+    /* margin: 15px; */
+    list-style: none;
+    user-select: none;
+    position: relative;
+    cursor: pointer;
+}
+
+.dropdown-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.dropdown-list > li::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    right: 50%;
+    bottom: 0;
+    background-color: chocolate;
+    transition: 0.4s ease-out;
+}
+
+.dropdown-list li a:hover {
+    color: chocolate;
+}
+
+.dropdown-list li:hover::after {
+    width: 100%;
+    right: 0;
+}
+
+.dropdown-item-item {
+    display: flex;
+}
+
+.dropdown-item-item a:hover + span {
+    color: chocolate !important;
+}
+
+.dropdown-item-item span {
+    color: white;
+    transition: 0.4s ease;
+    height: 24px;
+    position: relative;
+    top: 18px;
+    margin-left: -20px;
+}
+
+.dropdown-search {
+    padding-top: 10px;
+    padding-right: 15px;
+    cursor: pointer;
+    transition: 0.4s ease-out;
+    user-select: none;
+}
+
+.dropdown-search span {
+    color: white;
+    transform: translate(-40%,40%) !important;
+    transition: 0.4s ease;
+}
+
+.dropdown-search span:hover {
+    color: chocolate;
+}
+
+/* Login Form */
+.login-form {
+    width: 500px;
+    height: 290px;
+    margin: 100px auto 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.153);
+    border: none;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+}
+
+.input {
+    padding: 15px;
+    border: none;
+    border-bottom: 1px solid gray;
+    background-color: transparent;
+    outline: none;
+    color: white;
+    transition: 0.25s ease;
+    min-width: 460px;
+}
+
+.input-label, .input-password {
+    position: relative;
+    margin-top: 1.5rem;
+    user-select: none;
+}
+
+.name, .password {
+    position: absolute;
+    color: gray;
+    left: 16.5px;
+    top: 50%;
+    transform: translateY(-50%);
+    user-select: none;
+    pointer-events: none;
+    transition: 0.25s ease;
+}
+
+.input:focus {
+    border-color: chocolate;
+}
+
+.input:not(:placeholder-shown) + label ,
+
+.input:focus + label {
+    top: 0;
+    color: chocolate;
+    font-size: smaller;
+    /* background-color: rgba(0, 0, 0, 0.153); */
+}
+
+.forgot {
+    text-decoration: none;
+    color: white;
+    user-select: none;
+    transition: 0.25s ease;
+}
+
+.forgot:hover {
+    color: chocolate;
+}
+
+.condition-forgot {
+    display: flex;
+    justify-content: space-between;
+    width: 460px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.visibility {
+    position: absolute;
+    right: 16px;
+    top: 30%;
+    /* transform: translateY(45%); */
+}
+
+.checkbox {
+    transform: translateY(10%);
+}
+
+.login-button {
+    padding:  5px 15px;
+    background-color: chocolate;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.login-button:hover {
+    background-color: rgb(130, 65, 19);
+    color: whitesmoke;
+}
+
+/* Mini Menu */
+.mini-menu {
+    display: none;
+    list-style: none;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.148);
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.dropdown-item:hover .mini-menu {
+    display: block;
+    top: 100%;
+}
+
+.mini-menu-item a {
+    display: inline-block;
+    /* height: 100%; */
+ } 
+
+.mini-menu-item {
+    /* padding: 15px; */
+    transition: 0.4s ease-out;
+}
+
+.mini-menu-item:hover{
+    color: chocolate;
+}
